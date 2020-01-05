@@ -15,10 +15,8 @@ def reduce(array)
   i = 0
   result = 0
   while i < array.length
-    yield
+    result.push(yield(array[i]))
     i += 1
   end
   result
 end
-
-reduce(source_array) { |memo, n|  memo + n }

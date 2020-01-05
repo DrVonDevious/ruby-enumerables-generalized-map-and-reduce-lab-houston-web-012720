@@ -10,3 +10,15 @@ def map(array)
 end
 
 map([1, 2, 3, -9]) { |n| n * -1 }
+
+def reduce(array)
+  i = 0
+  result = 0
+  while i < array.length
+    yield
+    i += 1
+  end
+  result
+end
+
+reduce(source_array) { |memo, n|  memo + n }

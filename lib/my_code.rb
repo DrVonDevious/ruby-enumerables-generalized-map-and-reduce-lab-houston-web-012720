@@ -7,4 +7,4 @@ def map(array)
   array
 end
 
-def map(array) { |n| n * -1 }
+dmap(array) { |n| n * -1 }

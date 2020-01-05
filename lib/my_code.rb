@@ -11,7 +11,7 @@ end
 
 map([1, 2, 3, -9]) { |n| n * -1 }
 
-def reduce(array)
+def reduce(array, num)
   i = 0
   result = 0
   while i < array.length

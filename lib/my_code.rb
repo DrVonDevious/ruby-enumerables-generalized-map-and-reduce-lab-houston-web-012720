@@ -11,12 +11,18 @@ end
 
 map([1, 2, 3, -9]) { |n| n * -1 }
 
-def reduce(array, num)
-  i = 0
-  result = 0
+def reduce(array, nv = nil)
+  if num
+    sum = nv
+    i = 0
+  else
+    sum = array[0]
+    i = 0
+  end
+  
   while i < array.length
-    result = yield
+    sum = yield(sum, array[i])
     i += 1
   end
-  result
+  sum
 end

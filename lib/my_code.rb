@@ -1,2 +1,3 @@
 
-[1, 2, 3, -9].map { |n| n * -1 }
+def map(array)
+  i =

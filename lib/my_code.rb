@@ -12,7 +12,7 @@ end
 map([1, 2, 3, -9]) { |n| n * -1 }
 
 def reduce(array, nv = nil)
-  if num
+  if nv
     sum = nv
     i = 0
   else
